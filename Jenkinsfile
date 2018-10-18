@@ -7,4 +7,7 @@ pipeline {
       }
     }
   }
+  triggers {
+    eventTrigger(simpleMatch('testingCompleted'))
+  }
 }
