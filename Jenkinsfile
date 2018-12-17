@@ -8,6 +8,6 @@ pipeline {
     }
   }
   triggers {
-    eventTrigger(simpleMatch('testingCompleted'))
+    eventTrigger(simpleMatch('buildCompleted'))
   }
 }
