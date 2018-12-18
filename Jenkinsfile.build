@@ -8,6 +8,6 @@ pipeline {
     }
   }
   triggers {
-    eventTrigger(simpleMatch('buildCompleted'))
+    eventTrigger(jmespathQuery("eventName=='buildCompleted'"))
   }
 }
